@@ -19,7 +19,7 @@ def getTool(toolName, a=0):
     if a == 0:
         a += 1
     try:
-        url = 'https://raw.githubusercontent.com/Daxiong96/jd_scripts/master/' + toolName
+        url = 'https://github.com/Daxiong96/jd/blob/main/' + toolName
         response = requests.get(url)
         if response.status_code == 404:
             print(f"[{toolName}] 下载连接有误！")
